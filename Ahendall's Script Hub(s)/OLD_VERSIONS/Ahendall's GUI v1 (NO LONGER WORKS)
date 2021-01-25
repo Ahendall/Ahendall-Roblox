@@ -1,0 +1,498 @@
+-- Made by Ahendall/AHeldalil
+-- Subscirbe on youtube (channel name: Ahendall)
+
+local ScreenGui = Instance.new("ScreenGui")
+local OpenClose = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_Roundify_12px = Instance.new("ImageLabel")
+local Frame = Instance.new("ImageLabel")
+local infjump = Instance.new("TextButton")
+local INFJUMP_Roundify_12px = Instance.new("ImageLabel")
+local speed = Instance.new("TextButton")
+local INFJUMP_Roundify_12px_2 = Instance.new("ImageLabel")
+local jumpp = Instance.new("TextButton")
+local INFJUMP_Roundify_12px_3 = Instance.new("ImageLabel")
+local jumpd = Instance.new("TextButton")
+local INFJUMP_Roundify_12px_4 = Instance.new("ImageLabel")
+local noclip = Instance.new("TextButton")
+local INFJUMP_Roundify_12px_5 = Instance.new("ImageLabel")
+local TP = Instance.new("TextButton")
+local INFJUMP_Roundify_12px_6 = Instance.new("ImageLabel")
+local TITLE = Instance.new("TextLabel")
+local TITLE_Roundify_12px = Instance.new("ImageLabel")
+local Fly = Instance.new("TextButton")
+local INFJUMP_Roundify_12px_7 = Instance.new("ImageLabel")
+local unfly = Instance.new("TextButton")
+local INFJUMP_Roundify_12px_8 = Instance.new("ImageLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+OpenClose.Name = "Open/Close"
+OpenClose.Parent = ScreenGui
+OpenClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenClose.BackgroundTransparency = 1.000
+OpenClose.Position = UDim2.new(0, 0, 0.368038744, 0)
+OpenClose.Size = UDim2.new(0, 100, 0, 52)
+
+TextButton.Parent = OpenClose
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 200, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(0, 118, 0, 47)
+TextButton.ZIndex = 2
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "Open/Close"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 21.000
+
+TextButton_Roundify_12px.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px.Parent = TextButton
+TextButton_Roundify_12px.Active = true
+TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px.BackgroundTransparency = 1.000
+TextButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px.Selectable = true
+TextButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 200, 255)
+TextButton_Roundify_12px.ImageTransparency = 0.500
+TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px.SliceScale = 0.120
+
+Frame.Name = "Frame"
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.BorderSizePixel = 3
+Frame.Position = UDim2.new(0.00911577046, 0, 0.736884594, 0)
+Frame.Size = UDim2.new(0, 551, 0, 318)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(0, 14, 106)
+Frame.ImageTransparency = 0.400
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+Frame.Active = true
+Frame.Draggable = true
+
+--Infinite Jump
+infjump.Name = "infjump"
+infjump.Parent = Frame
+infjump.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+infjump.BackgroundTransparency = 1.000
+infjump.BorderSizePixel = 0
+infjump.Position = UDim2.new(0.0235934667, 0, 0.204402521, 0)
+infjump.Size = UDim2.new(0, 162, 0, 46)
+infjump.ZIndex = 2
+infjump.Font = Enum.Font.SciFi
+infjump.Text = "Infinite Jump"
+infjump.TextColor3 = Color3.fromRGB(255, 255, 255)
+infjump.TextSize = 21.000
+infjump.MouseButton1Down:connect(function()
+	local Player = game:GetService'Players'.LocalPlayer;
+local UIS = game:GetService'UserInputService';
+
+_G.JumpHeight = 125; --Change to whatever number you want the strength to be
+
+function Action(Object, Function) if Object ~= nil then Function(Object); end end
+
+UIS.InputBegan:connect(function(UserInput)
+    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+        Action(Player.Character.Humanoid, function(self)
+            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+                Action(self.Parent.HumanoidRootPart, function(self)
+                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+                end)
+            end
+        end)
+    end
+end)
+end)
+
+INFJUMP_Roundify_12px.Name = "INFJUMP_Roundify_12px"
+INFJUMP_Roundify_12px.Parent = infjump
+INFJUMP_Roundify_12px.Active = true
+INFJUMP_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+INFJUMP_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFJUMP_Roundify_12px.BackgroundTransparency = 1.000
+INFJUMP_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+INFJUMP_Roundify_12px.Selectable = true
+INFJUMP_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+INFJUMP_Roundify_12px.Image = "rbxassetid://3570695787"
+INFJUMP_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 0, 0)
+INFJUMP_Roundify_12px.ImageTransparency = 0.350
+INFJUMP_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+INFJUMP_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+INFJUMP_Roundify_12px.SliceScale = 0.120
+
+--Shift To Sprint
+speed.Name = "speed"
+speed.Parent = Frame
+speed.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+speed.BackgroundTransparency = 1.000
+speed.BorderSizePixel = 0
+speed.Position = UDim2.new(0.35208711, 0, 0.204402521, 0)
+speed.Size = UDim2.new(0, 162, 0, 46)
+speed.ZIndex = 2
+speed.Font = Enum.Font.SciFi
+speed.Text = "Shift To Sprint"
+speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+speed.TextSize = 21.000
+speed.MouseButton1Down:connect(function()
+	repeat wait() until game.Players.LocalPlayer
+
+m = game.Players.LocalPlayer:GetMouse()
+
+m.KeyDown:connect(function(key)
+	if key == "0" then --"Shift to run" 0 == shift
+		print("Running")
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100 -- Change to whatever you want the sprint speed to be
+	end
+end)
+
+m.KeyUp:connect(function(key)
+	if key == "0" then
+		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 40 -- Change to what you want the walk speed to be (Default is 16)
+	end
+end)
+
+end)
+
+
+INFJUMP_Roundify_12px_2.Name = "INFJUMP_Roundify_12px"
+INFJUMP_Roundify_12px_2.Parent = speed
+INFJUMP_Roundify_12px_2.Active = true
+INFJUMP_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+INFJUMP_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFJUMP_Roundify_12px_2.BackgroundTransparency = 1.000
+INFJUMP_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+INFJUMP_Roundify_12px_2.Selectable = true
+INFJUMP_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
+INFJUMP_Roundify_12px_2.Image = "rbxassetid://3570695787"
+INFJUMP_Roundify_12px_2.ImageColor3 = Color3.fromRGB(0, 0, 0)
+INFJUMP_Roundify_12px_2.ImageTransparency = 0.350
+INFJUMP_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+INFJUMP_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+INFJUMP_Roundify_12px_2.SliceScale = 0.120
+
+-- Increase Jump Power
+jumpp.Name = "jumpp"
+jumpp.Parent = Frame
+jumpp.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+jumpp.BackgroundTransparency = 1.000
+jumpp.BorderSizePixel = 0
+jumpp.Position = UDim2.new(0.671506345, 0, 0.204402521, 0)
+jumpp.Size = UDim2.new(0, 162, 0, 46)
+jumpp.ZIndex = 2
+jumpp.Font = Enum.Font.SciFi
+jumpp.Text = "Jump Power (INCR)"
+jumpp.TextColor3 = Color3.fromRGB(255, 255, 255)
+jumpp.TextSize = 19.000
+jumpp.MouseButton1Down:connect(function()
+	local Player = game:GetService("Players").LocalPlayer
+local Character = Player.Character
+local Humanoid = Character:FindFirstChild("Humanoid")
+Humanoid.JumpPower = 100 -- Default is 50
+end)
+
+
+INFJUMP_Roundify_12px_3.Name = "INFJUMP_Roundify_12px"
+INFJUMP_Roundify_12px_3.Parent = jumpp
+INFJUMP_Roundify_12px_3.Active = true
+INFJUMP_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+INFJUMP_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFJUMP_Roundify_12px_3.BackgroundTransparency = 1.000
+INFJUMP_Roundify_12px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+INFJUMP_Roundify_12px_3.Selectable = true
+INFJUMP_Roundify_12px_3.Size = UDim2.new(1, 0, 1, 0)
+INFJUMP_Roundify_12px_3.Image = "rbxassetid://3570695787"
+INFJUMP_Roundify_12px_3.ImageColor3 = Color3.fromRGB(0, 0, 0)
+INFJUMP_Roundify_12px_3.ImageTransparency = 0.350
+INFJUMP_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
+INFJUMP_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+INFJUMP_Roundify_12px_3.SliceScale = 0.120
+
+jumpd.Name = "jumpd"
+jumpd.Parent = Frame
+jumpd.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+jumpd.BackgroundTransparency = 1.000
+jumpd.BorderSizePixel = 0
+jumpd.Position = UDim2.new(0.671506345, 0, 0.496855348, 0)
+jumpd.Size = UDim2.new(0, 162, 0, 46)
+jumpd.ZIndex = 2
+jumpd.Font = Enum.Font.SciFi
+jumpd.Text = "Jump Power (DECR)"
+jumpd.TextColor3 = Color3.fromRGB(255, 255, 255)
+jumpd.TextSize = 19.000
+jumpd.MouseButton1Down:connect(function()
+	local Player = game:GetService("Players").LocalPlayer
+local Character = Player.Character
+local Humanoid = Character:FindFirstChild("Humanoid")
+Humanoid.JumpPower = 50 -- Default is 50
+end)
+
+
+INFJUMP_Roundify_12px_4.Name = "INFJUMP_Roundify_12px"
+INFJUMP_Roundify_12px_4.Parent = jumpd
+INFJUMP_Roundify_12px_4.Active = true
+INFJUMP_Roundify_12px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+INFJUMP_Roundify_12px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFJUMP_Roundify_12px_4.BackgroundTransparency = 1.000
+INFJUMP_Roundify_12px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+INFJUMP_Roundify_12px_4.Selectable = true
+INFJUMP_Roundify_12px_4.Size = UDim2.new(1, 0, 1, 0)
+INFJUMP_Roundify_12px_4.Image = "rbxassetid://3570695787"
+INFJUMP_Roundify_12px_4.ImageColor3 = Color3.fromRGB(0, 0, 0)
+INFJUMP_Roundify_12px_4.ImageTransparency = 0.350
+INFJUMP_Roundify_12px_4.ScaleType = Enum.ScaleType.Slice
+INFJUMP_Roundify_12px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+INFJUMP_Roundify_12px_4.SliceScale = 0.120
+
+noclip.Name = "noclip"
+noclip.Parent = Frame
+noclip.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+noclip.BackgroundTransparency = 1.000
+noclip.BorderSizePixel = 0
+noclip.Position = UDim2.new(0.35208711, 0, 0.496855348, 0)
+noclip.Size = UDim2.new(0, 162, 0, 46)
+noclip.ZIndex = 2
+noclip.Font = Enum.Font.SciFi
+noclip.Text = "E to Noclip"
+noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+noclip.TextSize = 21.000
+noclip.MouseButton1Down:connect(function()
+noclip = false
+game:GetService('RunService').Stepped:connect(function()
+if noclip then
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+
+if key == "e" then
+noclip = not noclip
+game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+end
+end)
+print("Loaded")
+print("Press E to noclip")
+end)
+
+INFJUMP_Roundify_12px_5.Name = "INFJUMP_Roundify_12px"
+INFJUMP_Roundify_12px_5.Parent = noclip
+INFJUMP_Roundify_12px_5.Active = true
+INFJUMP_Roundify_12px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+INFJUMP_Roundify_12px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFJUMP_Roundify_12px_5.BackgroundTransparency = 1.000
+INFJUMP_Roundify_12px_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+INFJUMP_Roundify_12px_5.Selectable = true
+INFJUMP_Roundify_12px_5.Size = UDim2.new(1, 0, 1, 0)
+INFJUMP_Roundify_12px_5.Image = "rbxassetid://3570695787"
+INFJUMP_Roundify_12px_5.ImageColor3 = Color3.fromRGB(0, 0, 0)
+INFJUMP_Roundify_12px_5.ImageTransparency = 0.350
+INFJUMP_Roundify_12px_5.ScaleType = Enum.ScaleType.Slice
+INFJUMP_Roundify_12px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+INFJUMP_Roundify_12px_5.SliceScale = 0.120
+
+TP.Name = "TP"
+TP.Parent = Frame
+TP.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TP.BackgroundTransparency = 1.000
+TP.BorderSizePixel = 0
+TP.Position = UDim2.new(0.0217786115, 0, 0.496855348, 0)
+TP.Size = UDim2.new(0, 162, 0, 46)
+TP.ZIndex = 2
+TP.Font = Enum.Font.SciFi
+TP.Text = "Q to Teleport"
+TP.TextColor3 = Color3.fromRGB(255, 255, 255)
+TP.TextSize = 21.000
+TP.MouseButton1Down:connect(function()
+	plr = game.Players.LocalPlayer hum = plr.Character.HumanoidRootPart mouse = plr:GetMouse() mouse.KeyDown:connect(function(key) if key == "q" then if mouse.Target then hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z) end end end)
+end)
+
+INFJUMP_Roundify_12px_6.Name = "INFJUMP_Roundify_12px"
+INFJUMP_Roundify_12px_6.Parent = TP
+INFJUMP_Roundify_12px_6.Active = true
+INFJUMP_Roundify_12px_6.AnchorPoint = Vector2.new(0.5, 0.5)
+INFJUMP_Roundify_12px_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFJUMP_Roundify_12px_6.BackgroundTransparency = 1.000
+INFJUMP_Roundify_12px_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+INFJUMP_Roundify_12px_6.Selectable = true
+INFJUMP_Roundify_12px_6.Size = UDim2.new(1, 0, 1, 0)
+INFJUMP_Roundify_12px_6.Image = "rbxassetid://3570695787"
+INFJUMP_Roundify_12px_6.ImageColor3 = Color3.fromRGB(0, 0, 0)
+INFJUMP_Roundify_12px_6.ImageTransparency = 0.350
+INFJUMP_Roundify_12px_6.ScaleType = Enum.ScaleType.Slice
+INFJUMP_Roundify_12px_6.SliceCenter = Rect.new(100, 100, 100, 100)
+INFJUMP_Roundify_12px_6.SliceScale = 0.120
+
+TITLE.Name = "TITLE"
+TITLE.Parent = Frame
+TITLE.BackgroundColor3 = Color3.fromRGB(0, 141, 180)
+TITLE.BackgroundTransparency = 1.000
+TITLE.BorderSizePixel = 0
+TITLE.Position = UDim2.new(0.0235934667, 0, 0.0251572318, 0)
+TITLE.Size = UDim2.new(0, 528, 0, 42)
+TITLE.ZIndex = 2
+TITLE.Font = Enum.Font.SciFi
+TITLE.Text = "Ahendall's GUI V1 | Made by Ahendall/AHeldalil"
+TITLE.TextColor3 = Color3.fromRGB(255, 255, 255)
+TITLE.TextSize = 25.000
+TITLE.TextStrokeColor3 = Color3.fromRGB(39, 219, 255)
+
+TITLE_Roundify_12px.Name = "TITLE_Roundify_12px"
+TITLE_Roundify_12px.Parent = TITLE
+TITLE_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TITLE_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TITLE_Roundify_12px.BackgroundTransparency = 1.000
+TITLE_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TITLE_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TITLE_Roundify_12px.Image = "rbxassetid://3570695787"
+TITLE_Roundify_12px.ImageColor3 = Color3.fromRGB(0, 141, 180)
+TITLE_Roundify_12px.ImageTransparency = 0.450
+TITLE_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TITLE_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TITLE_Roundify_12px.SliceScale = 0.120
+
+Fly.Name = "Fly"
+Fly.Parent = Frame
+Fly.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BackgroundTransparency = 1.000
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.35208711, 0, 0.776729524, 0)
+Fly.Size = UDim2.new(0, 162, 0, 46)
+Fly.ZIndex = 2
+Fly.Font = Enum.Font.SciFi
+Fly.Text = "F to Fly"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 21.000
+Fly.MouseButton1Down:connect(function()
+-- Press F to toggle
+
+repeat wait()
+   until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("UpperTorso") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+local mouse = game.Players.LocalPlayer:GetMouse()
+repeat wait() until mouse
+local plr = game.Players.LocalPlayer
+local UpperTorso = plr.Character.UpperTorso
+local flying = true
+local deb = true
+local ctrl = {f = 0, b = 0, l = 0, r = 0}
+local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+local maxspeed = 150
+local speed = 0
+
+function Fly()
+local bg = Instance.new("BodyGyro", UpperTorso)
+bg.P = 9e4
+bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+bg.cframe = UpperTorso.CFrame
+local bv = Instance.new("BodyVelocity", UpperTorso)
+bv.velocity = Vector3.new(0,0.1,0)
+bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+repeat wait()
+plr.Character.Humanoid.PlatformStand = true
+if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+speed = speed+.5+(speed/maxspeed)
+if speed > maxspeed then
+speed = maxspeed
+end
+elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+speed = speed-1
+if speed < 0 then
+speed = 0
+end
+end
+if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+else
+bv.velocity = Vector3.new(0,0.1,0)
+end
+bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0)
+until not flying
+ctrl = {f = 0, b = 0, l = 0, r = 0}
+lastctrl = {f = 0, b = 0, l = 0, r = 0}
+speed = 0
+bg:Destroy()
+bv:Destroy()
+plr.Character.Humanoid.PlatformStand = false
+end
+mouse.KeyDown:connect(function(key)
+if key:lower() == "f" then
+if flying then flying = false
+else
+flying = true
+Fly()
+end
+elseif key:lower() == "w" then
+ctrl.f = 1
+elseif key:lower() == "s" then
+ctrl.b = -1
+elseif key:lower() == "a" then
+ctrl.l = -1
+elseif key:lower() == "d" then
+ctrl.r = 1
+end
+end)
+mouse.KeyUp:connect(function(key)
+if key:lower() == "w" then
+ctrl.f = 0
+elseif key:lower() == "s" then
+ctrl.b = 0
+elseif key:lower() == "a" then
+ctrl.l = 0
+elseif key:lower() == "d" then
+ctrl.r = 0
+end
+end)
+Fly()
+end)
+
+INFJUMP_Roundify_12px_7.Name = "INFJUMP_Roundify_12px"
+INFJUMP_Roundify_12px_7.Parent = Fly
+INFJUMP_Roundify_12px_7.Active = true
+INFJUMP_Roundify_12px_7.AnchorPoint = Vector2.new(0.5, 0.5)
+INFJUMP_Roundify_12px_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+INFJUMP_Roundify_12px_7.BackgroundTransparency = 1.000
+INFJUMP_Roundify_12px_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+INFJUMP_Roundify_12px_7.Selectable = true
+INFJUMP_Roundify_12px_7.Size = UDim2.new(1, 0, 1, 0)
+INFJUMP_Roundify_12px_7.Image = "rbxassetid://3570695787"
+INFJUMP_Roundify_12px_7.ImageColor3 = Color3.fromRGB(0, 0, 0)
+INFJUMP_Roundify_12px_7.ImageTransparency = 0.350
+INFJUMP_Roundify_12px_7.ScaleType = Enum.ScaleType.Slice
+INFJUMP_Roundify_12px_7.SliceCenter = Rect.new(100, 100, 100, 100)
+INFJUMP_Roundify_12px_7.SliceScale = 0.120
+
+
+
+
+-- Scripts:
+
+local function WVFENF_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	function onClick()
+	if (script.Parent.Parent.Parent.Frame.Visible)then
+		
+		script.Parent.Parent.Parent.Frame.Visible = false
+		
+	else
+		
+		script.Parent.Parent.Parent.Frame.Visible = true
+		
+	end
+	end
+	
+	script.Parent.MouseButton1Down:Connect(onClick)
+end
+coroutine.wrap(WVFENF_fake_script)()
