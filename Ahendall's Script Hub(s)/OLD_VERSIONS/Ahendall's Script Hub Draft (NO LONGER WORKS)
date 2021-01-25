@@ -1,0 +1,1435 @@
+--[[
+	Ahendall's Script Hub v3
+	Converted using Gui-Lua v3.2
+	Enjoy
+]]
+
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Script Hub Loaded"; 
+    Text = "Enjoy Using Ahendall's Script Hub v3"; 
+    Icon = "rbxassetid://5859578444"; 
+    Duration = 6; 
+})
+
+wait(.5)
+
+-- Instances:
+
+local AhendallScriptHubV3 = Instance.new("ScreenGui")
+local Main = Instance.new("ScrollingFrame")
+local Changers = Instance.new("Folder")
+local Speed = Instance.new("Folder")
+local sbox = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local sbutton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local Jump = Instance.new("Folder")
+local jbox = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local jbutton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local Gravity = Instance.new("Folder")
+local gbox = Instance.new("TextBox")
+local UICorner_5 = Instance.new("UICorner")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local gbutton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local FOV = Instance.new("Folder")
+local fbox = Instance.new("TextBox")
+local UICorner_7 = Instance.new("UICorner")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local fbutton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local SimpleScripts = Instance.new("Folder")
+local _1shift = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local _2inf = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local _3noclip = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local _4fly = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+local _5qtp = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
+local _6kill = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+local Misc = Instance.new("Folder")
+local Title = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint")
+local line = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local UIAspectRatioConstraint_16 = Instance.new("UIAspectRatioConstraint")
+local line_2 = Instance.new("TextLabel")
+local UICorner_17 = Instance.new("UICorner")
+local UIAspectRatioConstraint_17 = Instance.new("UIAspectRatioConstraint")
+local Simple = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local UIAspectRatioConstraint_18 = Instance.new("UIAspectRatioConstraint")
+local GUIs = Instance.new("TextLabel")
+local UICorner_19 = Instance.new("UICorner")
+local UIAspectRatioConstraint_19 = Instance.new("UIAspectRatioConstraint")
+local line_3 = Instance.new("TextLabel")
+local UICorner_20 = Instance.new("UICorner")
+local UIAspectRatioConstraint_20 = Instance.new("UIAspectRatioConstraint")
+local GUIs_2 = Instance.new("Folder")
+local kill = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local UIAspectRatioConstraint_21 = Instance.new("UIAspectRatioConstraint")
+local jailbreak = Instance.new("TextButton")
+local UICorner_22 = Instance.new("UICorner")
+local UIAspectRatioConstraint_22 = Instance.new("UIAspectRatioConstraint")
+local ESP = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local UIAspectRatioConstraint_23 = Instance.new("UIAspectRatioConstraint")
+local OtherGUIs = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local UIAspectRatioConstraint_24 = Instance.new("UIAspectRatioConstraint")
+local infy = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local UIAspectRatioConstraint_25 = Instance.new("UIAspectRatioConstraint")
+local rb = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local UIAspectRatioConstraint_26 = Instance.new("UIAspectRatioConstraint")
+local pf = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local UIAspectRatioConstraint_27 = Instance.new("UIAspectRatioConstraint")
+local DarkHub = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local UIAspectRatioConstraint_28 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_29 = Instance.new("UIAspectRatioConstraint")
+local OpenClose = Instance.new("Frame")
+local ocb = Instance.new("TextButton")
+local UICorner_29 = Instance.new("UICorner")
+local UIAspectRatioConstraint_30 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_31 = Instance.new("UIAspectRatioConstraint")
+local MoreGuis = Instance.new("ScrollingFrame")
+local CloseGuis = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local UIAspectRatioConstraint_32 = Instance.new("UIAspectRatioConstraint")
+local Title_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_33 = Instance.new("UIAspectRatioConstraint")
+local Frosty = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local UIAspectRatioConstraint_34 = Instance.new("UIAspectRatioConstraint")
+local bigpb = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local UIAspectRatioConstraint_35 = Instance.new("UIAspectRatioConstraint")
+local mm2 = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local UIAspectRatioConstraint_36 = Instance.new("UIAspectRatioConstraint")
+local pfsa = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local UIAspectRatioConstraint_37 = Instance.new("UIAspectRatioConstraint")
+local cmdx = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local UIAspectRatioConstraint_38 = Instance.new("UIAspectRatioConstraint")
+local arsenal = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local UIAspectRatioConstraint_39 = Instance.new("UIAspectRatioConstraint")
+local projb = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local UIAspectRatioConstraint_40 = Instance.new("UIAspectRatioConstraint")
+local abd = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local UIAspectRatioConstraint_41 = Instance.new("UIAspectRatioConstraint")
+local emgui = Instance.new("TextButton")
+local UICorner_39 = Instance.new("UICorner")
+local UIAspectRatioConstraint_42 = Instance.new("UIAspectRatioConstraint")
+local owl = Instance.new("TextButton")
+local UICorner_40 = Instance.new("UICorner")
+local UIAspectRatioConstraint_43 = Instance.new("UIAspectRatioConstraint")
+local SaveInstance = Instance.new("TextButton")
+local UICorner_41 = Instance.new("UICorner")
+local UIAspectRatioConstraint_44 = Instance.new("UIAspectRatioConstraint")
+local cb2rc = Instance.new("TextButton")
+local UICorner_42 = Instance.new("UICorner")
+local UIAspectRatioConstraint_45 = Instance.new("UIAspectRatioConstraint")
+local cb2 = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local UIAspectRatioConstraint_46 = Instance.new("UIAspectRatioConstraint")
+local cb1 = Instance.new("TextButton")
+local UICorner_44 = Instance.new("UICorner")
+local UIAspectRatioConstraint_47 = Instance.new("UIAspectRatioConstraint")
+local origin = Instance.new("TextButton")
+local UICorner_45 = Instance.new("UICorner")
+local UIAspectRatioConstraint_48 = Instance.new("UIAspectRatioConstraint")
+local note = Instance.new("TextLabel")
+local UIAspectRatioConstraint_49 = Instance.new("UIAspectRatioConstraint")
+local note_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_50 = Instance.new("UIAspectRatioConstraint")
+local note_3 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_51 = Instance.new("UIAspectRatioConstraint")
+local note_4 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_52 = Instance.new("UIAspectRatioConstraint")
+local note_5 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_53 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_54 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+AhendallScriptHubV3.Name = "AhendallScriptHubV3"
+AhendallScriptHubV3.Parent = game:GetService("CoreGui")
+
+Main.Name = "Main"
+Main.Parent = AhendallScriptHubV3
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BackgroundTransparency = 0.200
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0112137208, 0, 0.634812295, 0)
+Main.Size = UDim2.new(0.358839065, 0, 0.339021623, 0)
+Main.CanvasSize = UDim2.new(0, 0, 1.5, 0)
+Main.ScrollBarThickness = 3
+Main.Draggable = true
+
+Changers.Name = "Changers"
+Changers.Parent = Main
+
+Speed.Name = "Speed"
+Speed.Parent = Changers
+
+sbox.Name = "sbox"
+sbox.Parent = Speed
+sbox.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+sbox.BackgroundTransparency = 0.200
+sbox.Position = UDim2.new(0.0588235334, 0, 0.256057978, 0)
+sbox.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+sbox.Font = Enum.Font.SciFi
+sbox.PlaceholderColor3 = Color3.fromRGB(177, 177, 177)
+sbox.PlaceholderText = "Insert Speed (Default is 16)"
+sbox.Text = ""
+sbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+sbox.TextSize = 30.000
+
+UICorner.CornerRadius = UDim.new(0.150000006, 0)
+UICorner.Parent = sbox
+
+UIAspectRatioConstraint.Parent = sbox
+UIAspectRatioConstraint.AspectRatio = 9.580
+
+sbutton.Name = "sbutton"
+sbutton.Parent = Speed
+sbutton.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+sbutton.BackgroundTransparency = 0.200
+sbutton.Position = UDim2.new(0.0588235296, 0, 0.299088508, 0)
+sbutton.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+sbutton.Font = Enum.Font.SciFi
+sbutton.Text = "Change Speed"
+sbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+sbutton.TextSize = 30.000
+sbutton.MouseButton1Down:connect(function()
+	local sped = tonumber(sbutton.Parent.sbox.Text)
+	local hum = game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid")
+	
+	hum.WalkSpeed = sped
+	print("Speed has been changed to ", hum.WalkSpeed)
+end)
+
+UICorner_2.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_2.Parent = sbutton
+
+UIAspectRatioConstraint_2.Parent = sbutton
+UIAspectRatioConstraint_2.AspectRatio = 9.580
+
+Jump.Name = "Jump"
+Jump.Parent = Changers
+
+jbox.Name = "jbox"
+jbox.Parent = Jump
+jbox.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+jbox.BackgroundTransparency = 0.200
+jbox.Position = UDim2.new(0.0588235334, 0, 0.355413318, 0)
+jbox.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+jbox.Font = Enum.Font.SciFi
+jbox.PlaceholderColor3 = Color3.fromRGB(177, 177, 177)
+jbox.PlaceholderText = "Insert Jump Power (Default is 50)"
+jbox.Text = ""
+jbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+jbox.TextSize = 30.000
+
+UICorner_3.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_3.Parent = jbox
+
+UIAspectRatioConstraint_3.Parent = jbox
+UIAspectRatioConstraint_3.AspectRatio = 9.580
+
+jbutton.Name = "jbutton"
+jbutton.Parent = Jump
+jbutton.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+jbutton.BackgroundTransparency = 0.200
+jbutton.Position = UDim2.new(0.0588235296, 0, 0.398443848, 0)
+jbutton.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+jbutton.Font = Enum.Font.SciFi
+jbutton.Text = "Change Jump Power"
+jbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+jbutton.TextSize = 30.000
+jbutton.MouseButton1Down:connect(function()
+	local jump = tonumber(jbutton.Parent.jbox.Text)
+	local hum = game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid")
+	
+	hum.JumpPower = jump
+	print("Jump Power has been changed to ", hum.JumpPower)
+end)
+
+UICorner_4.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_4.Parent = jbutton
+
+UIAspectRatioConstraint_4.Parent = jbutton
+UIAspectRatioConstraint_4.AspectRatio = 9.580
+
+Gravity.Name = "Gravity"
+Gravity.Parent = Changers
+
+gbox.Name = "gbox"
+gbox.Parent = Gravity
+gbox.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+gbox.BackgroundTransparency = 0.200
+gbox.Position = UDim2.new(0.0588235334, 0, 0.457043946, 0)
+gbox.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+gbox.Font = Enum.Font.SciFi
+gbox.PlaceholderColor3 = Color3.fromRGB(177, 177, 177)
+gbox.PlaceholderText = "Insert Gravity (Default is 196.2)"
+gbox.Text = ""
+gbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+gbox.TextSize = 30.000
+
+UICorner_5.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_5.Parent = gbox
+
+UIAspectRatioConstraint_5.Parent = gbox
+UIAspectRatioConstraint_5.AspectRatio = 9.580
+
+gbutton.Name = "gbutton"
+gbutton.Parent = Gravity
+gbutton.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+gbutton.BackgroundTransparency = 0.200
+gbutton.Position = UDim2.new(0.0588235296, 0, 0.500074506, 0)
+gbutton.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+gbutton.Font = Enum.Font.SciFi
+gbutton.Text = "Change Gravity"
+gbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+gbutton.TextSize = 30.000
+gbutton.MouseButton1Down:connect(function()
+	local grav = tonumber(gbutton.Parent.gbox.Text)
+	local ws = game:GetService("Workspace")
+	
+	ws.Gravity = grav
+	print("Gravity has been changed to  ", ws.Gravity)
+end)
+
+UICorner_6.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_6.Parent = gbutton
+
+UIAspectRatioConstraint_6.Parent = gbutton
+UIAspectRatioConstraint_6.AspectRatio = 9.580
+
+FOV.Name = "FOV"
+FOV.Parent = Changers
+
+fbox.Name = "fbox"
+fbox.Parent = FOV
+fbox.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+fbox.BackgroundTransparency = 0.200
+fbox.Position = UDim2.new(0.0588235334, 0, 0.556399345, 0)
+fbox.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+fbox.Font = Enum.Font.SciFi
+fbox.PlaceholderColor3 = Color3.fromRGB(177, 177, 177)
+fbox.PlaceholderText = "Insert FOV (Default is 70)"
+fbox.Text = ""
+fbox.TextColor3 = Color3.fromRGB(255, 255, 255)
+fbox.TextSize = 30.000
+
+UICorner_7.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_7.Parent = fbox
+
+UIAspectRatioConstraint_7.Parent = fbox
+UIAspectRatioConstraint_7.AspectRatio = 9.580
+
+fbutton.Name = "fbutton"
+fbutton.Parent = FOV
+fbutton.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+fbutton.BackgroundTransparency = 0.200
+fbutton.Position = UDim2.new(0.0588235296, 0, 0.599429846, 0)
+fbutton.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+fbutton.Font = Enum.Font.SciFi
+fbutton.Text = "Change FOV"
+fbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+fbutton.TextSize = 30.000
+fbutton.MouseButton1Down:connect(function()
+	local field = tonumber(fbutton.Parent.fbox.Text)
+	local cam = game:GetService("Workspace"):FindFirstChild("Camera")
+	
+	cam.FieldOfView = field
+	print("FOV has been changed to  ", cam.FieldOfView)
+end)
+
+UICorner_8.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_8.Parent = fbutton
+
+UIAspectRatioConstraint_8.Parent = fbutton
+UIAspectRatioConstraint_8.AspectRatio = 9.580
+
+SimpleScripts.Name = "Simple Scripts"
+SimpleScripts.Parent = Main
+
+_1shift.Name = "1shift"
+_1shift.Parent = SimpleScripts
+_1shift.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+_1shift.BackgroundTransparency = 0.200
+_1shift.Position = UDim2.new(0.0459558815, 0, 0.0866776556, 0)
+_1shift.Size = UDim2.new(0.422794104, 0, 0.167785242, 0)
+_1shift.Font = Enum.Font.SciFi
+_1shift.Text = "Shift to Sprint"
+_1shift.TextColor3 = Color3.fromRGB(255, 255, 255)
+_1shift.TextSize = 30.000
+_1shift.MouseButton1Down:connect(function()
+    repeat wait() until game:GetService("Players").LocalPlayer
+
+    local plr = game:GetService("Players").LocalPlayer
+    local hum = plr.Character:FindFirstChild("Humanoid")
+    local m = plr:GetMouse()
+
+    m.KeyDown:connect(function(key)
+	    if key == "0" then 
+        	hum.WalkSpeed = 100
+    	end
+    end)
+
+
+    m.KeyUp:connect(function(key)
+	    if key == "0" then
+		    hum.WalkSpeed = 20
+	    end
+    end)
+end)
+
+UICorner_9.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_9.Parent = _1shift
+
+UIAspectRatioConstraint_9.Parent = _1shift
+UIAspectRatioConstraint_9.AspectRatio = 4.600
+
+_2inf.Name = "2inf"
+_2inf.Parent = SimpleScripts
+_2inf.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+_2inf.BackgroundTransparency = 0.200
+_2inf.Position = UDim2.new(0.53125, 0, 0.0866776556, 0)
+_2inf.Size = UDim2.new(0.422794104, 0, 0.167785242, 0)
+_2inf.Font = Enum.Font.SciFi
+_2inf.Text = "Infinite Jump"
+_2inf.TextColor3 = Color3.fromRGB(255, 255, 255)
+_2inf.TextSize = 30.000
+_2inf.MouseButton1Down:connect(function()
+	local Player = game:GetService'Players'.LocalPlayer;
+    local UIS = game:GetService'UserInputService';
+
+    _G.JumpHeight = 125; --Change to whatever number you want the strength to be
+
+    function Action(Object, Function) if Object ~= nil then Function(Object); end end
+
+    UIS.InputBegan:connect(function(UserInput)
+        if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+            Action(Player.Character.Humanoid, function(self)
+                if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+                    Action(self.Parent.HumanoidRootPart, function(self)
+                        self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+                    end)
+                end
+            end)
+        end
+    end)
+end)
+
+UICorner_10.CornerRadius = UDim.new(0.0799999982, 0)
+UICorner_10.Parent = _2inf
+
+UIAspectRatioConstraint_10.Parent = _2inf
+UIAspectRatioConstraint_10.AspectRatio = 4.600
+
+_3noclip.Name = "3noclip"
+_3noclip.Parent = SimpleScripts
+_3noclip.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+_3noclip.BackgroundTransparency = 0.200
+_3noclip.Position = UDim2.new(0.0459558815, 0, 0.133700788, 0)
+_3noclip.Size = UDim2.new(0.422794104, 0, 0.167785242, 0)
+_3noclip.Font = Enum.Font.SciFi
+_3noclip.Text = "E to Noclip"
+_3noclip.TextColor3 = Color3.fromRGB(255, 255, 255)
+_3noclip.TextSize = 30.000
+_3noclip.MouseButton1Down:connect(function()
+    noclip = false
+    game:GetService('RunService').Stepped:connect(function()
+        if noclip then
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        end
+    end)
+
+    plr = game.Players.LocalPlayer
+    mouse = plr:GetMouse()
+    mouse.KeyDown:connect(function(key)
+        if key == "e" then
+            noclip = not noclip
+            game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+        end
+    end)
+    print("Loaded")
+    print("Press E to noclip")
+end)
+
+UICorner_11.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_11.Parent = _3noclip
+
+UIAspectRatioConstraint_11.Parent = _3noclip
+UIAspectRatioConstraint_11.AspectRatio = 4.600
+
+_4fly.Name = "4fly"
+_4fly.Parent = SimpleScripts
+_4fly.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+_4fly.BackgroundTransparency = 0.200
+_4fly.Position = UDim2.new(0.53125, 0, 0.133700788, 0)
+_4fly.Size = UDim2.new(0.422794104, 0, 0.167785242, 0)
+_4fly.Font = Enum.Font.SciFi
+_4fly.Text = "F to Fly"
+_4fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+_4fly.TextSize = 30.000
+_4fly.MouseButton1Down:connect(function()
+    repeat
+        wait()
+    until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and
+        game.Players.LocalPlayer.Character:findFirstChild("UpperTorso") and
+        game.Players.LocalPlayer.Character:findFirstChild("Humanoid")
+    local mouse = game.Players.LocalPlayer:GetMouse()
+    repeat
+        wait()
+    until mouse
+    local plr = game.Players.LocalPlayer
+    local UpperTorso = plr.Character.UpperTorso
+    local flying = true
+    local deb = true
+    local ctrl = {f = 0, b = 0, l = 0, r = 0}
+    local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+    local maxspeed = 150
+    local speed = 0
+    
+    function Fly()
+        local bg = Instance.new("BodyGyro", UpperTorso)
+        bg.P = 9e4
+        bg.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+        bg.cframe = UpperTorso.CFrame
+        local bv = Instance.new("BodyVelocity", UpperTorso)
+        bv.velocity = Vector3.new(0, 0.1, 0)
+        bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+        repeat
+            wait()
+            plr.Character.Humanoid.PlatformStand = true
+            if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+                speed = speed + .5 + (speed / maxspeed)
+                if speed > maxspeed then
+                    speed = maxspeed
+                end
+            elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+                speed = speed - 1
+                if speed < 0 then
+                    speed = 0
+                end
+            end
+            if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+                bv.velocity =
+                    ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f + ctrl.b)) +
+                    ((game.Workspace.CurrentCamera.CoordinateFrame *
+                        CFrame.new(ctrl.l + ctrl.r, (ctrl.f + ctrl.b) * .2, 0).p) -
+                        game.Workspace.CurrentCamera.CoordinateFrame.p)) *
+                    speed
+                lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+            elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+                bv.velocity =
+                    ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f + lastctrl.b)) +
+                    ((game.Workspace.CurrentCamera.CoordinateFrame *
+                        CFrame.new(lastctrl.l + lastctrl.r, (lastctrl.f + lastctrl.b) * .2, 0).p) -
+                        game.Workspace.CurrentCamera.CoordinateFrame.p)) *
+                    speed
+            else
+                bv.velocity = Vector3.new(0, 0.1, 0)
+            end
+            bg.cframe =
+                game.Workspace.CurrentCamera.CoordinateFrame *
+                CFrame.Angles(-math.rad((ctrl.f + ctrl.b) * 50 * speed / maxspeed), 0, 0)
+        until not flying
+        ctrl = {f = 0, b = 0, l = 0, r = 0}
+        lastctrl = {f = 0, b = 0, l = 0, r = 0}
+        speed = 0
+        bg:Destroy()
+        bv:Destroy()
+        plr.Character.Humanoid.PlatformStand = false
+    end
+    mouse.KeyDown:connect(
+        function(key)
+            if key:lower() == "f" then
+                if flying then
+                    flying = false
+                else
+                    flying = true
+                    Fly()
+                end
+            elseif key:lower() == "w" then
+                ctrl.f = 1
+            elseif key:lower() == "s" then
+                ctrl.b = -1
+            elseif key:lower() == "a" then
+                ctrl.l = -1
+            elseif key:lower() == "d" then
+                ctrl.r = 1
+            end
+        end
+    )
+    mouse.KeyUp:connect(
+        function(key)
+            if key:lower() == "w" then
+                ctrl.f = 0
+            elseif key:lower() == "s" then
+                ctrl.b = 0
+            elseif key:lower() == "a" then
+                ctrl.l = 0
+            elseif key:lower() == "d" then
+                ctrl.r = 0
+            end
+        end
+    )
+    Fly()
+    
+end)
+
+UICorner_12.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_12.Parent = _4fly
+
+UIAspectRatioConstraint_12.Parent = _4fly
+UIAspectRatioConstraint_12.AspectRatio = 4.600
+
+_5qtp.Name = "5qtp"
+_5qtp.Parent = SimpleScripts
+_5qtp.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+_5qtp.BackgroundTransparency = 0.200
+_5qtp.Position = UDim2.new(0.0496323407, 0, 0.179965481, 0)
+_5qtp.Size = UDim2.new(0.422794104, 0, 0.167785242, 0)
+_5qtp.Font = Enum.Font.SciFi
+_5qtp.Text = "Q to Teleport"
+_5qtp.TextColor3 = Color3.fromRGB(255, 255, 255)
+_5qtp.TextSize = 30.000
+_5qtp.MouseButton1Down:connect(function()
+    local plr = game:GetService("Players").LocalPlayer
+    local hum = plr.Character:FindFirstChild("HumanoidRootPart")
+    local mouse = plr:GetMouse()
+    
+    mouse.KeyDown:connect(function(key) -- Detecting if there is a key being pressed
+        if key == "q" then -- Checking if the key is Q
+             if mouse.Target then -- checking if mouse.Target exists
+                hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z) -- Actually moving your character
+            end
+        end 
+    end)
+end)
+
+UICorner_13.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_13.Parent = _5qtp
+
+UIAspectRatioConstraint_13.Parent = _5qtp
+UIAspectRatioConstraint_13.AspectRatio = 4.600
+
+_6kill.Name = "6kill"
+_6kill.Parent = SimpleScripts
+_6kill.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+_6kill.BackgroundTransparency = 0.200
+_6kill.Position = UDim2.new(0.53125, 0, 0.179965481, 0)
+_6kill.Size = UDim2.new(0.422794104, 0, 0.167785242, 0)
+_6kill.Font = Enum.Font.SciFi
+_6kill.Text = "Reset Character"
+_6kill.TextColor3 = Color3.fromRGB(255, 255, 255)
+_6kill.TextSize = 30.000
+_6kill.MouseButton1Click:connect(function()
+    game:GetService("Players").LocalPlayer.Character:Destroy()
+end)
+
+UICorner_14.CornerRadius = UDim.new(0.100000001, 0)
+UICorner_14.Parent = _6kill
+
+UIAspectRatioConstraint_14.Parent = _6kill
+UIAspectRatioConstraint_14.AspectRatio = 4.600
+
+Misc.Name = "Misc"
+Misc.Parent = Main
+
+Title.Name = "Title"
+Title.Parent = Misc
+Title.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+Title.BackgroundTransparency = 0.200
+Title.BorderColor3 = Color3.fromRGB(7, 0, 113)
+Title.Position = UDim2.new(0.0128676472, 0, 0.00595980929, 0)
+Title.Size = UDim2.new(0.972426474, 0, 0.167785242, 0)
+Title.Font = Enum.Font.SciFi
+Title.Text = "Ahendall's Script Hub v3"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 35.000
+
+UICorner_15.CornerRadius = UDim.new(0.25, 0)
+UICorner_15.Parent = Title
+
+UIAspectRatioConstraint_15.Parent = Title
+UIAspectRatioConstraint_15.AspectRatio = 10.580
+
+line.Name = "line"
+line.Parent = Misc
+line.BackgroundColor3 = Color3.fromRGB(232, 232, 232)
+line.BackgroundTransparency = 0.200
+line.Position = UDim2.new(0.0289999992, 0, 0.654999971, 0)
+line.Size = UDim2.new(0.939338207, 0, 0.0100671137, 0)
+line.Font = Enum.Font.SourceSans
+line.Text = ""
+line.TextColor3 = Color3.fromRGB(0, 0, 0)
+line.TextSize = 14.000
+
+UICorner_16.CornerRadius = UDim.new(0.5, 0)
+UICorner_16.Parent = line
+
+UIAspectRatioConstraint_16.Parent = line
+UIAspectRatioConstraint_16.AspectRatio = 170.333
+
+line_2.Name = "line"
+line_2.Parent = Misc
+line_2.BackgroundColor3 = Color3.fromRGB(232, 232, 232)
+line_2.BackgroundTransparency = 0.200
+line_2.Position = UDim2.new(0.0294117648, 0, 0.234183937, 0)
+line_2.Size = UDim2.new(0.939338207, 0, 0.0100671137, 0)
+line_2.Font = Enum.Font.SourceSans
+line_2.Text = ""
+line_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+line_2.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(0.5, 0)
+UICorner_17.Parent = line_2
+
+UIAspectRatioConstraint_17.Parent = line_2
+UIAspectRatioConstraint_17.AspectRatio = 170.333
+
+Simple.Name = "Simple"
+Simple.Parent = Misc
+Simple.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+Simple.BackgroundTransparency = 1.000
+Simple.BorderColor3 = Color3.fromRGB(7, 0, 113)
+Simple.Position = UDim2.new(0.0128676472, 0, 0.0438816883, 0)
+Simple.Size = UDim2.new(0.972426474, 0, 0.167785242, 0)
+Simple.Font = Enum.Font.SciFi
+Simple.Text = "Simple Scripts"
+Simple.TextColor3 = Color3.fromRGB(255, 255, 255)
+Simple.TextSize = 32.000
+
+UICorner_18.CornerRadius = UDim.new(0.25, 0)
+UICorner_18.Parent = Simple
+
+UIAspectRatioConstraint_18.Parent = Simple
+UIAspectRatioConstraint_18.AspectRatio = 10.580
+
+GUIs.Name = "GUIs"
+GUIs.Parent = Misc
+GUIs.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+GUIs.BackgroundTransparency = 1.000
+GUIs.BorderColor3 = Color3.fromRGB(7, 0, 113)
+GUIs.Position = UDim2.new(0.0128676472, 0, 0.662766755, 0)
+GUIs.Size = UDim2.new(0.972426474, 0, 0.167785242, 0)
+GUIs.Font = Enum.Font.SciFi
+GUIs.Text = "GUIs and Hubs"
+GUIs.TextColor3 = Color3.fromRGB(255, 255, 255)
+GUIs.TextSize = 32.000
+
+UICorner_19.CornerRadius = UDim.new(0.25, 0)
+UICorner_19.Parent = GUIs
+
+UIAspectRatioConstraint_19.Parent = GUIs
+UIAspectRatioConstraint_19.AspectRatio = 10.580
+
+line_3.Name = "line"
+line_3.Parent = Misc
+line_3.BackgroundColor3 = Color3.fromRGB(232, 232, 232)
+line_3.BackgroundTransparency = 0.200
+line_3.Position = UDim2.new(0.0289999992, 0, 0.942447841, 0)
+line_3.Size = UDim2.new(0.939338207, 0, 0.0100671137, 0)
+line_3.Font = Enum.Font.SourceSans
+line_3.Text = ""
+line_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+line_3.TextSize = 14.000
+
+UICorner_20.CornerRadius = UDim.new(0.5, 0)
+UICorner_20.Parent = line_3
+
+UIAspectRatioConstraint_20.Parent = line_3
+UIAspectRatioConstraint_20.AspectRatio = 170.333
+
+GUIs_2.Name = "GUIs"
+GUIs_2.Parent = Main
+
+kill.Name = "kill"
+kill.Parent = GUIs_2
+kill.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+kill.BackgroundTransparency = 0.200
+kill.Position = UDim2.new(0.0588235296, 0, 0.951344848, 0)
+kill.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+kill.Font = Enum.Font.SciFi
+kill.Text = "Kill \"Ahendall's Script Hub v3\""
+kill.TextColor3 = Color3.fromRGB(255, 255, 255)
+kill.TextSize = 30.000
+
+UICorner_21.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_21.Parent = kill
+
+UIAspectRatioConstraint_21.Parent = kill
+UIAspectRatioConstraint_21.AspectRatio = 9.580
+
+jailbreak.Name = "jailbreak"
+jailbreak.Parent = GUIs_2
+jailbreak.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+jailbreak.BackgroundTransparency = 0.200
+jailbreak.Position = UDim2.new(0.0588235296, 0, 0.798898935, 0)
+jailbreak.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+jailbreak.Font = Enum.Font.SciFi
+jailbreak.Text = "Vynixius Jailbreak GUI"
+jailbreak.TextColor3 = Color3.fromRGB(255, 255, 255)
+jailbreak.TextSize = 30.000
+jailbreak.MouseButton1Down:connect(function()
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak", true))()
+    
+end)
+
+UICorner_22.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_22.Parent = jailbreak
+
+UIAspectRatioConstraint_22.Parent = jailbreak
+UIAspectRatioConstraint_22.AspectRatio = 9.580
+
+ESP.Name = "ESP"
+ESP.Parent = GUIs_2
+ESP.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+ESP.BackgroundTransparency = 0.200
+ESP.Position = UDim2.new(0.0588235371, 0, 0.745805681, 0)
+ESP.Size = UDim2.new(0.435661733, 0, 0.167785242, 0)
+ESP.Font = Enum.Font.SciFi
+ESP.Text = "Unnamed ESP"
+ESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESP.TextSize = 30.000
+ESP.MouseButton1Down:connect(function()
+    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ic3w0lf22/Unnamed-ESP/master/UnnamedESP.lua"))();
+    
+end)
+
+UICorner_23.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_23.Parent = ESP
+
+UIAspectRatioConstraint_23.Parent = ESP
+UIAspectRatioConstraint_23.AspectRatio = 4.740
+
+OtherGUIs.Name = "Other GUIs"
+OtherGUIs.Parent = GUIs_2
+OtherGUIs.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+OtherGUIs.BackgroundTransparency = 0.200
+OtherGUIs.Position = UDim2.new(0.0590000004, 0, 0.893000007, 0)
+OtherGUIs.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+OtherGUIs.Font = Enum.Font.SciFi
+OtherGUIs.Text = "More GUIs"
+OtherGUIs.TextColor3 = Color3.fromRGB(255, 255, 255)
+OtherGUIs.TextSize = 30.000
+
+
+UICorner_24.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_24.Parent = OtherGUIs
+
+UIAspectRatioConstraint_24.Parent = OtherGUIs
+UIAspectRatioConstraint_24.AspectRatio = 9.580
+
+infy.Name = "infy"
+infy.Parent = GUIs_2
+infy.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+infy.BackgroundTransparency = 0.200
+infy.Position = UDim2.new(0.0588235371, 0, 0.842885673, 0)
+infy.Size = UDim2.new(0.435661733, 0, 0.167785242, 0)
+infy.Font = Enum.Font.SciFi
+infy.Text = "Infinite Yield"
+infy.TextColor3 = Color3.fromRGB(255, 255, 255)
+infy.TextSize = 30.000
+infy.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+UICorner_25.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_25.Parent = infy
+
+UIAspectRatioConstraint_25.Parent = infy
+UIAspectRatioConstraint_25.AspectRatio = 4.740
+
+rb.Name = "rb"
+rb.Parent = GUIs_2
+rb.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+rb.BackgroundTransparency = 0.200
+rb.Position = UDim2.new(0.503676474, 0, 0.745805681, 0)
+rb.Size = UDim2.new(0.435661733, 0, 0.167785242, 0)
+rb.Font = Enum.Font.SciFi
+rb.Text = "RB World 2 GUI"
+rb.TextColor3 = Color3.fromRGB(255, 255, 255)
+rb.TextSize = 30.000
+rb.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/09kCgGnV"))();
+end)
+
+UICorner_26.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_26.Parent = rb
+
+UIAspectRatioConstraint_26.Parent = rb
+UIAspectRatioConstraint_26.AspectRatio = 4.740
+
+pf.Name = "UAim"
+pf.Parent = GUIs_2
+pf.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+pf.BackgroundTransparency = 0.200
+pf.Position = UDim2.new(0.503676474, 0, 0.842885673, 0)
+pf.Size = UDim2.new(0.435661733, 0, 0.167785242, 0)
+pf.Font = Enum.Font.SciFi
+pf.Text = "Unviersal Aimbot"
+pf.TextColor3 = Color3.fromRGB(255, 255, 255)
+pf.TextSize = 30.000
+pf.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/AimHot-v8/master/Main.lua", true))()
+end)
+
+UICorner_27.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_27.Parent = pf
+
+UIAspectRatioConstraint_27.Parent = pf
+UIAspectRatioConstraint_27.AspectRatio = 4.740
+
+DarkHub.Name = "Dark Hub"
+DarkHub.Parent = GUIs_2
+DarkHub.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+DarkHub.BackgroundTransparency = 0.200
+DarkHub.Position = UDim2.new(0.0588235296, 0, 0.701818943, 0)
+DarkHub.Size = UDim2.new(0.880514681, 0, 0.167785242, 0)
+DarkHub.Font = Enum.Font.SciFi
+DarkHub.Text = "Dark Hub"
+DarkHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkHub.TextSize = 30.000
+DarkHub.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/yCrBkPaY'), true))()
+end)
+
+UICorner_28.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_28.Parent = DarkHub
+
+UIAspectRatioConstraint_28.Parent = DarkHub
+UIAspectRatioConstraint_28.AspectRatio = 9.580
+
+UIAspectRatioConstraint_29.Parent = Main
+UIAspectRatioConstraint_29.AspectRatio = 1.826
+
+OpenClose.Name = "OpenClose"
+OpenClose.Parent = AhendallScriptHubV3
+OpenClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenClose.BackgroundTransparency = 1.000
+OpenClose.Position = UDim2.new(0, 0, 0.465301484, 0)
+OpenClose.Size = UDim2.new(0.0659630597, 0, 0.0364050046, 0)
+
+ocb.Name = "ocb"
+ocb.Parent = OpenClose
+ocb.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+ocb.BackgroundTransparency = 0.200
+ocb.Position = UDim2.new(-0.0500000007, 0, 0.40625, 0)
+ocb.Size = UDim2.new(1.18000007, 0, 1.09375012, 0)
+ocb.Font = Enum.Font.SciFi
+ocb.Text = "Open/Close"
+ocb.TextColor3 = Color3.fromRGB(255, 255, 255)
+ocb.TextSize = 20.000
+
+UICorner_29.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_29.Parent = ocb
+
+UIAspectRatioConstraint_30.Parent = ocb
+UIAspectRatioConstraint_30.AspectRatio = 3.371
+
+UIAspectRatioConstraint_31.Parent = OpenClose
+UIAspectRatioConstraint_31.AspectRatio = 3.125
+
+MoreGuis.Name = "MoreGuis"
+MoreGuis.Parent = AhendallScriptHubV3
+MoreGuis.Active = true
+MoreGuis.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MoreGuis.BackgroundTransparency = 0.300
+MoreGuis.BorderSizePixel = 0
+MoreGuis.Position = UDim2.new(0.718337715, 0, 0.46416381, 0)
+MoreGuis.Size = UDim2.new(0.261873364, 0, 0.516496003, 0)
+MoreGuis.CanvasSize = UDim2.new(0, 0, 1.5, 0)
+MoreGuis.ScrollBarThickness = 0
+MoreGuis.Draggable = true
+MoreGuis.Visible = false
+
+CloseGuis.Name = "CloseGuis"
+CloseGuis.Parent = MoreGuis
+CloseGuis.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+CloseGuis.Position = UDim2.new(0.0201511327, 0, 0.00881057233, 0)
+CloseGuis.Size = UDim2.new(0.0755667537, 0, 0.0418502204, 0)
+CloseGuis.Font = Enum.Font.SourceSansBold
+CloseGuis.Text = "X"
+CloseGuis.TextColor3 = Color3.fromRGB(255, 0, 0)
+CloseGuis.TextSize = 20.000
+
+UICorner_30.CornerRadius = UDim.new(0.200000003, 0)
+UICorner_30.Parent = CloseGuis
+
+UIAspectRatioConstraint_32.Parent = CloseGuis
+UIAspectRatioConstraint_32.AspectRatio = 1.579
+
+Title_2.Name = "Title"
+Title_2.Parent = MoreGuis
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0.244332492, 0, 0, 0)
+Title_2.Size = UDim2.new(0.503778338, 0, 0.110132158, 0)
+Title_2.Font = Enum.Font.SciFi
+Title_2.Text = "More GUIs"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextSize = 35.000
+
+UIAspectRatioConstraint_33.Parent = Title_2
+UIAspectRatioConstraint_33.AspectRatio = 4.000
+
+Frosty.Name = "Frosty"
+Frosty.Parent = MoreGuis
+Frosty.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+Frosty.BackgroundTransparency = 0.200
+Frosty.Position = UDim2.new(0.04534005, 0, 0.101321585, 0)
+Frosty.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+Frosty.Font = Enum.Font.SciFi
+Frosty.Text = "Frosty's Explorer"
+Frosty.TextColor3 = Color3.fromRGB(255, 255, 255)
+Frosty.TextSize = 30.000
+Frosty.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/meA9wBb2", true))()
+end)
+
+UICorner_31.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_31.Parent = Frosty
+
+UIAspectRatioConstraint_34.Parent = Frosty
+UIAspectRatioConstraint_34.AspectRatio = 7.220
+
+bigpb.Name = "bigpb"
+bigpb.Parent = MoreGuis
+bigpb.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+bigpb.BackgroundTransparency = 0.200
+bigpb.Position = UDim2.new(0.04534005, 0, 0.257709265, 0)
+bigpb.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+bigpb.Font = Enum.Font.SciFi
+bigpb.Text = "Big Paintball GUI"
+bigpb.TextColor3 = Color3.fromRGB(255, 255, 255)
+bigpb.TextSize = 30.000
+bigpb.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Ahendall/Big-Fucker/master/Big%20Fucker.lua'))()
+end)
+
+UICorner_32.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_32.Parent = bigpb
+
+UIAspectRatioConstraint_35.Parent = bigpb
+UIAspectRatioConstraint_35.AspectRatio = 7.220
+
+mm2.Name = "mm2"
+mm2.Parent = MoreGuis
+mm2.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+mm2.BackgroundTransparency = 0.200
+mm2.Position = UDim2.new(0.0428211577, 0, 0.207048461, 0)
+mm2.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+mm2.Font = Enum.Font.SciFi
+mm2.Text = "Murder Mystery 2 GUI"
+mm2.TextColor3 = Color3.fromRGB(255, 255, 255)
+mm2.TextSize = 30.000
+mm2.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/qiXJPHeq'))()
+end)
+
+UICorner_33.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_33.Parent = mm2
+
+UIAspectRatioConstraint_36.Parent = mm2
+UIAspectRatioConstraint_36.AspectRatio = 7.220
+
+pfsa.Name = "pfsa"
+pfsa.Parent = MoreGuis
+pfsa.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+pfsa.BackgroundTransparency = 0.200
+pfsa.Position = UDim2.new(0.04534005, 0, 0.154185027, 0)
+pfsa.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+pfsa.Font = Enum.Font.SciFi
+pfsa.Text = "Phantom Forces Silent Aim"
+pfsa.TextColor3 = Color3.fromRGB(255, 255, 255)
+pfsa.TextSize = 30.000
+pfsa.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/0TvNH588", true))()
+end)
+
+UICorner_34.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_34.Parent = pfsa
+
+UIAspectRatioConstraint_37.Parent = pfsa
+UIAspectRatioConstraint_37.AspectRatio = 7.220
+
+cmdx.Name = "cmdx"
+cmdx.Parent = MoreGuis
+cmdx.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+cmdx.BackgroundTransparency = 0.200
+cmdx.Position = UDim2.new(0.04534005, 0, 0.308370054, 0)
+cmdx.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+cmdx.Font = Enum.Font.SciFi
+cmdx.Text = "CMD-X Admin"
+cmdx.TextColor3 = Color3.fromRGB(255, 255, 255)
+cmdx.TextSize = 30.000
+cmdx.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+UICorner_35.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_35.Parent = cmdx
+
+UIAspectRatioConstraint_38.Parent = cmdx
+UIAspectRatioConstraint_38.AspectRatio = 7.220
+
+arsenal.Name = "arsenal"
+arsenal.Parent = MoreGuis
+arsenal.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+arsenal.BackgroundTransparency = 0.200
+arsenal.Position = UDim2.new(0.04534005, 0, 0.359030843, 0)
+arsenal.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+arsenal.Font = Enum.Font.SciFi
+arsenal.Text = "Arsenal GUI"
+arsenal.TextColor3 = Color3.fromRGB(255, 255, 255)
+arsenal.TextSize = 30.000
+arsenal.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/T3fzg7tm', true))()
+end)
+
+UICorner_36.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_36.Parent = arsenal
+
+UIAspectRatioConstraint_39.Parent = arsenal
+UIAspectRatioConstraint_39.AspectRatio = 7.220
+
+projb.Name = "projb"
+projb.Parent = MoreGuis
+projb.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+projb.BackgroundTransparency = 0.200
+projb.Position = UDim2.new(0.04534005, 0, 0.409691632, 0)
+projb.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+projb.Font = Enum.Font.SciFi
+projb.Text = "Project Bullshit"
+projb.TextColor3 = Color3.fromRGB(255, 255, 255)
+projb.TextSize = 30.000
+projb.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/uw2P2fbY", true))()
+end)
+
+UICorner_37.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_37.Parent = projb
+
+UIAspectRatioConstraint_40.Parent = projb
+UIAspectRatioConstraint_40.AspectRatio = 7.220
+
+abd.Name = "abd"
+abd.Parent = MoreGuis
+abd.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+abd.BackgroundTransparency = 0.200
+abd.Position = UDim2.new(0.0428211577, 0, 0.462555081, 0)
+abd.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+abd.Font = Enum.Font.SciFi
+abd.Text = "A Bizzare Day GUI"
+abd.TextColor3 = Color3.fromRGB(255, 255, 255)
+abd.TextSize = 30.000
+abd.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Moddi69/Script/master/ABizarreHackRe"),true))()
+end)
+
+UICorner_38.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_38.Parent = abd
+
+UIAspectRatioConstraint_41.Parent = abd
+UIAspectRatioConstraint_41.AspectRatio = 7.220
+
+emgui.Name = "ahub"
+emgui.Parent = MoreGuis
+emgui.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+emgui.BackgroundTransparency = 0.200
+emgui.Position = UDim2.new(0.04534005, 0, 0.51321584, 0)
+emgui.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+emgui.Font = Enum.Font.SciFi
+emgui.Text = "Allinity Hub"
+emgui.TextColor3 = Color3.fromRGB(255, 255, 255)
+emgui.TextSize = 30.000
+emgui.MouseButton1Down:connect(function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Allinity/Allinity-Hub/main/Allinity%20Hub%20v.1"))()
+end)
+
+UICorner_39.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_39.Parent = emgui
+
+UIAspectRatioConstraint_42.Parent = emgui
+UIAspectRatioConstraint_42.AspectRatio = 7.220
+
+owl.Name = "owl"
+owl.Parent = MoreGuis
+owl.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+owl.BackgroundTransparency = 0.200
+owl.Position = UDim2.new(0.04534005, 0, 0.563876629, 0)
+owl.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+owl.Font = Enum.Font.SciFi
+owl.Text = "Owl Hub"
+owl.TextColor3 = Color3.fromRGB(255, 255, 255)
+owl.TextSize = 30.000
+owl.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
+end)
+
+UICorner_40.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_40.Parent = owl
+
+UIAspectRatioConstraint_43.Parent = owl
+UIAspectRatioConstraint_43.AspectRatio = 7.220
+
+SaveInstance.Name = "Save Instance"
+SaveInstance.Parent = MoreGuis
+SaveInstance.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+SaveInstance.BackgroundTransparency = 0.200
+SaveInstance.Position = UDim2.new(0.0428211577, 0, 0.0484581515, 0)
+SaveInstance.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+SaveInstance.Font = Enum.Font.SciFi
+SaveInstance.Text = "Save Current Instance"
+SaveInstance.TextColor3 = Color3.fromRGB(0, 187, 255)
+SaveInstance.TextSize = 30.000
+SaveInstance.MouseButton1Down:connect(function()
+    saveinstance()
+end)
+
+UICorner_41.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_41.Parent = SaveInstance
+
+UIAspectRatioConstraint_44.Parent = SaveInstance
+UIAspectRatioConstraint_44.AspectRatio = 7.220
+
+cb2rc.Name = "cb2rc"
+cb2rc.Parent = MoreGuis
+cb2rc.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+cb2rc.BackgroundTransparency = 0.200
+cb2rc.Position = UDim2.new(0.04534005, 0, 0.720264316, 0)
+cb2rc.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+cb2rc.Font = Enum.Font.SciFi
+cb2rc.Text = "Counter Blox GUI v2 (RC)"
+cb2rc.TextColor3 = Color3.fromRGB(255, 255, 255)
+cb2rc.TextSize = 30.000
+cb2rc.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ahendall/Big-Fucker/master/Qual%20v2%20Raycasting.lua"),true))()
+end)
+
+UICorner_42.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_42.Parent = cb2rc
+
+UIAspectRatioConstraint_45.Parent = cb2rc
+UIAspectRatioConstraint_45.AspectRatio = 7.220
+
+cb2.Name = "cb2"
+cb2.Parent = MoreGuis
+cb2.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+cb2.BackgroundTransparency = 0.200
+cb2.Position = UDim2.new(0.0478589423, 0, 0.667400897, 0)
+cb2.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+cb2.Font = Enum.Font.SciFi
+cb2.Text = "Counter Blox GUI v2"
+cb2.TextColor3 = Color3.fromRGB(255, 255, 255)
+cb2.TextSize = 30.000
+cb2.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ahendall/Big-Fucker/master/Qual%20v2%20Camera.lua"),true))()
+end)
+
+UICorner_43.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_43.Parent = cb2
+
+UIAspectRatioConstraint_46.Parent = cb2
+UIAspectRatioConstraint_46.AspectRatio = 7.220
+
+cb1.Name = "cb1"
+cb1.Parent = MoreGuis
+cb1.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+cb1.BackgroundTransparency = 0.200
+cb1.Position = UDim2.new(0.04534005, 0, 0.616740108, 0)
+cb1.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+cb1.Font = Enum.Font.SciFi
+cb1.Text = "Counter Blox GUI v1"
+cb1.TextColor3 = Color3.fromRGB(255, 255, 255)
+cb1.TextSize = 30.000
+cb1.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Ahendall/Big-Fucker/master/Qual%20v2%20Raycasting.lua"),true))()
+end)
+
+UICorner_44.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_44.Parent = cb1
+
+UIAspectRatioConstraint_47.Parent = cb1
+UIAspectRatioConstraint_47.AspectRatio = 7.220
+
+origin.Name = "origin"
+origin.Parent = MoreGuis
+origin.BackgroundColor3 = Color3.fromRGB(0, 2, 135)
+origin.BackgroundTransparency = 0.200
+origin.Position = UDim2.new(0.0428211577, 0, 0.775330424, 0)
+origin.Size = UDim2.new(0.909319878, 0, 0.110132158, 0)
+origin.Font = Enum.Font.SciFi
+origin.Text = "Origin Hub"
+origin.TextColor3 = Color3.fromRGB(255, 255, 255)
+origin.TextSize = 30.000
+origin.MouseButton1Down:connect(function()
+    loadstring(game:HttpGet("http://tiny.cc/loadoriginhub", true))()
+end)
+
+UICorner_45.CornerRadius = UDim.new(0.150000006, 0)
+UICorner_45.Parent = origin
+
+UIAspectRatioConstraint_48.Parent = origin
+UIAspectRatioConstraint_48.AspectRatio = 7.220
+
+note.Name = "note"
+note.Parent = MoreGuis
+note.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+note.BackgroundTransparency = 1.000
+note.Position = UDim2.new(0.244332492, 0, 0.823788524, 0)
+note.Size = UDim2.new(0.503778338, 0, 0.110132158, 0)
+note.Font = Enum.Font.SciFi
+note.Text = "*NOTE*"
+note.TextColor3 = Color3.fromRGB(255, 255, 255)
+note.TextSize = 35.000
+
+UIAspectRatioConstraint_49.Parent = note
+UIAspectRatioConstraint_49.AspectRatio = 4.000
+
+note_2.Name = "note"
+note_2.Parent = MoreGuis
+note_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+note_2.BackgroundTransparency = 1.000
+note_2.Position = UDim2.new(0, 0, 0.870044053, 0)
+note_2.Size = UDim2.new(1, 0, 0.06167401, 0)
+note_2.Font = Enum.Font.SciFi
+note_2.Text = "Vynixius Jailbreak requires"
+note_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+note_2.TextSize = 30.000
+
+UIAspectRatioConstraint_50.Parent = note_2
+UIAspectRatioConstraint_50.AspectRatio = 14.179
+
+note_3.Name = "note"
+note_3.Parent = MoreGuis
+note_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+note_3.BackgroundTransparency = 1.000
+note_3.Position = UDim2.new(0, 0, 0.898678422, 0)
+note_3.Size = UDim2.new(1, 0, 0.06167401, 0)
+note_3.Font = Enum.Font.SciFi
+note_3.Text = "a 2 time key which can be"
+note_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+note_3.TextSize = 30.000
+
+UIAspectRatioConstraint_51.Parent = note_3
+UIAspectRatioConstraint_51.AspectRatio = 14.179
+
+note_4.Name = "note"
+note_4.Parent = MoreGuis
+note_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+note_4.BackgroundTransparency = 1.000
+note_4.Position = UDim2.new(-0.00251889159, 0, 0.925110161, 0)
+note_4.Size = UDim2.new(1, 0, 0.06167401, 0)
+note_4.Font = Enum.Font.SciFi
+note_4.Text = "Found at:"
+note_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+note_4.TextSize = 30.000
+
+UIAspectRatioConstraint_52.Parent = note_4
+UIAspectRatioConstraint_52.AspectRatio = 14.179
+
+note_5.Name = "note"
+note_5.Parent = MoreGuis
+note_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+note_5.BackgroundTransparency = 1.000
+note_5.Position = UDim2.new(-0.00251889159, 0, 0.955947161, 0)
+note_5.Size = UDim2.new(1, 0, 0.06167401, 0)
+note_5.Font = Enum.Font.SciFi
+note_5.Text = "https://invite.gg/vynixu"
+note_5.TextColor3 = Color3.fromRGB(8, 255, 206)
+note_5.TextSize = 35.000
+
+UIAspectRatioConstraint_53.Parent = note_5
+UIAspectRatioConstraint_53.AspectRatio = 14.179
+
+UIAspectRatioConstraint_54.Parent = MoreGuis
+UIAspectRatioConstraint_54.AspectRatio = 0.874
+
+-- Scripts:
+
+local function JHYB_fake_script() -- kill.LocalScript 
+	local script = Instance.new('LocalScript', kill)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(JHYB_fake_script)()
+local function JITTV_fake_script() -- OtherGUIs.LocalScript 
+	local script = Instance.new('LocalScript', OtherGUIs)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		
+		script.Parent.Parent.Parent.Parent.MoreGuis.Visible = true
+		
+	end)
+end
+coroutine.wrap(JITTV_fake_script)()
+local function YHZTVGR_fake_script() -- ocb.LocalScript 
+	local script = Instance.new('LocalScript', ocb)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	if (script.Parent.Parent.Parent.Main.Visible)then
+	
+			script.Parent.Parent.Parent.Main.Visible = false
+	
+	else
+	
+			script.Parent.Parent.Parent.Main.Visible = true
+	
+	end
+	end)
+end
+coroutine.wrap(YHZTVGR_fake_script)()
+local function FYFMA_fake_script() -- CloseGuis.LocalScript 
+	local script = Instance.new('LocalScript', CloseGuis)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		
+		if (script.Parent.Parent.Visible) then
+			script.Parent.Parent.Visible = false
+		end
+		
+	end)
+end
+coroutine.wrap(FYFMA_fake_script)()
+
